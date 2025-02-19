@@ -129,7 +129,7 @@ body {
     margin-top: 1em;
 }
 
-.lista__link a{
+.lista__link a {
     text-decoration: none;
     color: var(--branco-principal);
     margin-left: 1em;
@@ -145,11 +145,26 @@ body {
     color: var(--botao-azul);
 }
 
-.lista__link a:active {
-    color: purple;
+.container__botao:hover {
+    background-color: var(--cinza-secundario);
+    color: var(--botao-azul);
 }
 
-.container__botao:hover {
-    background-color: var(--botao-azul-efeito);
-    color: var(--cor-de-fundo);
+@media (max-width: 600px) {
+    .container {
+        height: 50vh;
+        grid-template-columns: 50% 50%;
+    }
+    .container__aviso {
+        font-size: 12px;
+    }
+    .container__titulo {
+        font-size: 14px;
+    }
+    .container__caixa {
+        margin: 1em 0em 0em 2em;
+    }
+    .container__imagem {
+        width: 50%;
+    }
 }
