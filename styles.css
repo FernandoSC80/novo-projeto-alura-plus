@@ -150,8 +150,9 @@ body {
     color: var(--botao-azul);
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
 
+    /* tentativa solo de fazer site responsivo para celular.
     .container {
         height: 50vh;
         grid-template-columns: 50% 50%;
@@ -204,5 +205,50 @@ body {
     }
     .dispositivos__imagem {
         width: 70%;
+    }
+} */
+
+    /* seguindo aula de responsividade para site responsivo para celular */
+
+    .container {
+        display: block;
+        background-image: none;
+    }
+
+    .container__imagem {
+        width: 50vw;
+    }
+
+    .container__caixa {
+        margin: 3em 3em;
+    }
+
+    .secundario {
+        margin: 0;
+        text-align: center;
+    }
+
+    .secundario__imagem {
+        width: 50%;
+    }
+
+    .dispositivos__lista {
+        display: block;
+    }
+
+    .rodape__lista {
+        display: block;
+    }
+
+    .rodape__texto {
+        padding: 1em;
+    }
+
+    .dispositivos__titulo {
+        font-size: 30px;
+    }
+
+    .lista__link {
+        margin: 1em;
     }
 }
